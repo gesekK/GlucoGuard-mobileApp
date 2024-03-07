@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "137846504274",
+    "firebase_url": "https://zpo2-8ff94-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "zpo2-8ff94",
+    "storage_bucket": "zpo2-8ff94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137846504274:android:6beff2a56792f8392f988b",
+        "android_client_info": {
+          "package_name": "com.example.dziennik_diabetyka_zpo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137846504274-2vpv6pu75ghndqde02uneaqf6pg5rmi0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dziennik_diabetyka_zpo",
+            "certificate_hash": "63989f624100d3dc48dfd80eb1722e34e62371a1"
+          }
+        },
+        {
+          "client_id": "137846504274-8v0c3ghf3aibh0a2mjdv4ilda829bhm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARo-hYFFjnV3suy6WlGQO_Of37jGZsd3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137846504274-8v0c3ghf3aibh0a2mjdv4ilda829bhm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

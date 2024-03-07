@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/layout_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:text="Welcome back!"
+            android:textColor="@color/light_grey"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/edittext_backgroun"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/new_grey"
+            android:textColorHint="@color/new_grey" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/edittext_backgroun"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/new_grey"
+            android:textColorHint="@color/new_grey" />
+
+        <TextView
+            android:id="@+id/btnSignUp"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="Don't have account? Sign Up"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="340dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="60dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                app:background="@color/colorPrimary"
+                android:text="@string/btn_login"
+                android:textColor="@color/colorAccent"
+                app:cornerRadius="5dp" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#707070" />
+
+            <TextView
+                android:id="@+id/alternative_login_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Or login with"
+                android:textColor="@color/new_grey"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#707070" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/googleBtn"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            app:srcCompat="@mipmap/google_foreground" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    tools:context=".activities.GlucoseUploadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <TextView
+            android:id="@+id/h1"
+            android:layout_marginTop="180dp"
+            android:layout_width="320dp"
+            android:textColor="@color/new_grey"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Nice to see you!"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/h2"
+            android:layout_marginTop="5dp"
+            android:layout_width="320dp"
+            android:textColor="@color/new_grey"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Add Glucose And Insulin Results"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="60dp"
+            android:id="@+id/upload_glucose_card"
+            android:layout_width="320dp"
+            android:layout_height="162dp"
+            android:background="@color/card_background"
+            app:cardBackgroundColor="#474746"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/calc_insulin_text"
+                android:layout_width="111dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Insulin"
+                android:textColor="#9C9A9A"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/upload_tvinsulin"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="70dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#9C9A9A"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/upload_mgdl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="90dp"
+                android:text="mg/dl"
+                android:textColor="#9C9A9A"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/upload_insulin_card"
+            android:layout_width="321dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="162dp"
+            android:layout_marginBottom="60dp"
+            android:background="@color/card_background"
+            app:cardBackgroundColor="#474746"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp">
+
+            <TextView
+                android:id="@+id/upload_glucose_text"
+                android:layout_width="111dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Glucose"
+                android:textColor="#9C9A9A"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/upload_tvglucose"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="70dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#9C9A9A"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/etmUml2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="90dp"
+                android:text="mg/dl"
+                android:textColor="#9C9A9A"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/upload_save_button"
+            android:layout_width="315dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="196dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

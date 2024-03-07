@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    tools:context="activities.GlucoseChartActivity">
+
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="669dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glucose Charts"
+            android:textColor="@color/new_grey"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_glucoseChart1"
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="5dp"
+            android:text="Today"
+            android:textColor="#9C9A9A"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/glucoseChart_month_card"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="10px"
+            android:background="@color/card_background"
+            app:cardBackgroundColor="#474746"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+
+            >
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/Chart_day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+            </com.github.mikephil.charting.charts.LineChart>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_glucoseChart2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="40dp"
+            android:text="Last week"
+            android:textColor="#9C9A9A"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/glucoseChart_weeek_card"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/card_background"
+            app:cardBackgroundColor="#474746"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/Chart_week"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+            </com.github.mikephil.charting.charts.BarChart>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_glucose_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_input_add"
+            app:tint="#FFFFFF" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
